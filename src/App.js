@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import './App.css'
+import FileDrop from './components/FileDrop'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+    return (
+      <div className=' p-20'>
+        <h1 className='text-2xl py-10'>Upload XML files</h1>
+        <p className='py-5'>Choose the size of the field you would like to convert to. <br></br>
+        Upload an XML file and then click download once complete</p>
+        <p>Future installments will implement an interactive Heatmap and a scoring table to update the scores</p>
+        <p>Default values for field size are set for AC Milan</p>
+        <FileDrop />
+      </div>
+    );
+  }
 
 export default App;
+
